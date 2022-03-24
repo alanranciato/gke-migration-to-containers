@@ -29,6 +29,6 @@ check_dependency_installed () {
 ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 check_dependency_installed "python"
-check_dependency_installed "pip"
+check_dependency_installed "pip3"
 
 pip install -r "${ROOT}/requirements.txt"
