@@ -39,4 +39,4 @@ WORKDIR /opt
 USER apprunner
 EXPOSE 8080
 
-ENTRYPOINT ["/usr/bin/dumb-init", "/usr/local/bin/gunicorn", "--bind", "0.0.0.0:8080", "prime-flask-server"]
+ENTRYPOINT ["/usr/bin/dumb-init", "/usr/local/bin/gunicorn.sh", "--bind", "0.0.0.0:8080", "prime-flask-server"]
